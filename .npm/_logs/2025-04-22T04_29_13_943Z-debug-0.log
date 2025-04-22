@@ -6,14 +6,14 @@
 5 silly config load:file:/usr/local/etc/npmrc
 6 verbose title npm install
 7 verbose argv "install" "--force"
-8 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2025-04-22T04_26_44_435Z-
-9 verbose logfile /home/user/.npm/_logs/2025-04-22T04_26_44_435Z-debug-0.log
+8 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2025-04-22T04_29_13_943Z-
+9 verbose logfile /home/user/.npm/_logs/2025-04-22T04_29_13_943Z-debug-0.log
 10 warn using --force Recommended protections disabled.
 11 silly packumentCache heap:530317312 maxSize:132579328 maxEntrySize:66289664
-12 silly logfile done cleaning log files
-13 silly idealTree buildDeps
-14 silly reify moves {}
-15 http fetch GET 200 https://registry.npmjs.org/npm 1735ms
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly reify moves {}
 16 silly audit bulk request {
 16 silly audit   '@0no-co/graphql.web': [ '1.0.13' ],
 16 silly audit   '@ampproject/remapping': [ '2.3.0' ],
@@ -216,6 +216,7 @@
 16 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
 16 silly audit   '@radix-ui/react-compose-refs': [ '1.0.0' ],
 16 silly audit   '@radix-ui/react-slot': [ '1.0.1' ],
+16 silly audit   '@react-native-async-storage/async-storage': [ '2.1.2' ],
 16 silly audit   '@react-native/assets-registry': [ '0.76.6' ],
 16 silly audit   '@react-native/babel-plugin-codegen': [ '0.76.7', '0.76.6' ],
 16 silly audit   '@react-native/babel-preset': [ '0.76.7', '0.76.6' ],
@@ -531,6 +532,7 @@
 16 silly audit   'is-number': [ '7.0.0' ],
 16 silly audit   'is-path-cwd': [ '2.2.0' ],
 16 silly audit   'is-path-inside': [ '3.0.3' ],
+16 silly audit   'is-plain-obj': [ '2.1.0' ],
 16 silly audit   'is-plain-object': [ '2.0.4' ],
 16 silly audit   'is-regex': [ '1.2.1' ],
 16 silly audit   'is-typed-array': [ '1.1.15' ],
@@ -589,6 +591,7 @@
 16 silly audit   'md5-file': [ '3.2.3' ],
 16 silly audit   'mdn-data': [ '2.0.14' ],
 16 silly audit   'memoize-one': [ '5.2.1', '6.0.0' ],
+16 silly audit   'merge-options': [ '3.0.4' ],
 16 silly audit   'merge-stream': [ '2.0.0' ],
 16 silly audit   merge2: [ '1.4.1' ],
 16 silly audit   metro: [ '0.81.1' ],
@@ -836,220 +839,116 @@
 32 silly reify mark deleted [ '/home/user/node_modules/lightningcss-darwin-arm64' ]
 33 verbose reify failed optional dependency /home/user/node_modules/fsevents
 34 silly reify mark deleted [ '/home/user/node_modules/fsevents' ]
-35 silly tarball no local data for esutils@https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz. Extracting by manifest.
-36 silly tarball no local data for @babel/preset-modules@https://registry.npmjs.org/@babel/preset-modules/-/preset-modules-0.1.6-no-external-plugins.tgz. Extracting by manifest.
-37 silly tarball no local data for @babel/preset-env@https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.26.8.tgz. Extracting by manifest.
-38 silly tarball no local data for babel-plugin-polyfill-corejs3@https://registry.npmjs.org/babel-plugin-polyfill-corejs3/-/babel-plugin-polyfill-corejs3-0.11.1.tgz. Extracting by manifest.
-39 silly tarball no local data for @babel/plugin-transform-unicode-sets-regex@https://registry.npmjs.org/@babel/plugin-transform-unicode-sets-regex/-/plugin-transform-unicode-sets-regex-7.25.9.tgz. Extracting by manifest.
-40 silly tarball no local data for @babel/plugin-transform-unicode-property-regex@https://registry.npmjs.org/@babel/plugin-transform-unicode-property-regex/-/plugin-transform-unicode-property-regex-7.25.9.tgz. Extracting by manifest.
-41 silly tarball no local data for @babel/plugin-transform-unicode-escapes@https://registry.npmjs.org/@babel/plugin-transform-unicode-escapes/-/plugin-transform-unicode-escapes-7.25.9.tgz. Extracting by manifest.
-42 silly tarball no local data for @babel/plugin-transform-typeof-symbol@https://registry.npmjs.org/@babel/plugin-transform-typeof-symbol/-/plugin-transform-typeof-symbol-7.26.7.tgz. Extracting by manifest.
-43 silly tarball no local data for @babel/plugin-transform-reserved-words@https://registry.npmjs.org/@babel/plugin-transform-reserved-words/-/plugin-transform-reserved-words-7.25.9.tgz. Extracting by manifest.
-44 silly tarball no local data for @babel/plugin-transform-regexp-modifiers@https://registry.npmjs.org/@babel/plugin-transform-regexp-modifiers/-/plugin-transform-regexp-modifiers-7.26.0.tgz. Extracting by manifest.
-45 silly tarball no local data for @babel/plugin-transform-property-literals@https://registry.npmjs.org/@babel/plugin-transform-property-literals/-/plugin-transform-property-literals-7.25.9.tgz. Extracting by manifest.
-46 silly tarball no local data for @babel/plugin-transform-object-super@https://registry.npmjs.org/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.25.9.tgz. Extracting by manifest.
-47 silly tarball no local data for @babel/plugin-transform-new-target@https://registry.npmjs.org/@babel/plugin-transform-new-target/-/plugin-transform-new-target-7.25.9.tgz. Extracting by manifest.
-48 silly tarball no local data for @babel/plugin-transform-modules-umd@https://registry.npmjs.org/@babel/plugin-transform-modules-umd/-/plugin-transform-modules-umd-7.25.9.tgz. Extracting by manifest.
-49 silly tarball no local data for @babel/plugin-transform-modules-systemjs@https://registry.npmjs.org/@babel/plugin-transform-modules-systemjs/-/plugin-transform-modules-systemjs-7.25.9.tgz. Extracting by manifest.
-50 silly tarball no local data for @babel/plugin-transform-modules-amd@https://registry.npmjs.org/@babel/plugin-transform-modules-amd/-/plugin-transform-modules-amd-7.25.9.tgz. Extracting by manifest.
-51 silly tarball no local data for @babel/plugin-transform-member-expression-literals@https://registry.npmjs.org/@babel/plugin-transform-member-expression-literals/-/plugin-transform-member-expression-literals-7.25.9.tgz. Extracting by manifest.
-52 silly tarball no local data for @babel/plugin-transform-json-strings@https://registry.npmjs.org/@babel/plugin-transform-json-strings/-/plugin-transform-json-strings-7.25.9.tgz. Extracting by manifest.
-53 silly tarball no local data for @babel/plugin-transform-exponentiation-operator@https://registry.npmjs.org/@babel/plugin-transform-exponentiation-operator/-/plugin-transform-exponentiation-operator-7.26.3.tgz. Extracting by manifest.
-54 silly tarball no local data for @babel/plugin-transform-dynamic-import@https://registry.npmjs.org/@babel/plugin-transform-dynamic-import/-/plugin-transform-dynamic-import-7.25.9.tgz. Extracting by manifest.
-55 silly tarball no local data for @babel/plugin-transform-duplicate-named-capturing-groups-regex@https://registry.npmjs.org/@babel/plugin-transform-duplicate-named-capturing-groups-regex/-/plugin-transform-duplicate-named-capturing-groups-regex-7.25.9.tgz. Extracting by manifest.
-56 silly tarball no local data for @babel/plugin-transform-duplicate-keys@https://registry.npmjs.org/@babel/plugin-transform-duplicate-keys/-/plugin-transform-duplicate-keys-7.25.9.tgz. Extracting by manifest.
-57 silly tarball no local data for @babel/plugin-transform-dotall-regex@https://registry.npmjs.org/@babel/plugin-transform-dotall-regex/-/plugin-transform-dotall-regex-7.25.9.tgz. Extracting by manifest.
-58 silly tarball no local data for @babel/plugin-transform-class-static-block@https://registry.npmjs.org/@babel/plugin-transform-class-static-block/-/plugin-transform-class-static-block-7.26.0.tgz. Extracting by manifest.
-59 silly tarball no local data for @babel/plugin-transform-block-scoped-functions@https://registry.npmjs.org/@babel/plugin-transform-block-scoped-functions/-/plugin-transform-block-scoped-functions-7.26.5.tgz. Extracting by manifest.
-60 silly tarball no local data for @babel/plugin-syntax-unicode-sets-regex@https://registry.npmjs.org/@babel/plugin-syntax-unicode-sets-regex/-/plugin-syntax-unicode-sets-regex-7.18.6.tgz. Extracting by manifest.
-61 silly tarball no local data for @babel/plugin-syntax-import-assertions@https://registry.npmjs.org/@babel/plugin-syntax-import-assertions/-/plugin-syntax-import-assertions-7.26.0.tgz. Extracting by manifest.
-62 silly tarball no local data for @babel/plugin-proposal-private-property-in-object@https://registry.npmjs.org/@babel/plugin-proposal-private-property-in-object/-/plugin-proposal-private-property-in-object-7.21.0-placeholder-for-preset-env.2.tgz. Extracting by manifest.
-63 silly tarball no local data for @babel/plugin-bugfix-v8-static-class-fields-redefine-readonly@https://registry.npmjs.org/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/-/plugin-bugfix-v8-static-class-fields-redefine-readonly-7.25.9.tgz. Extracting by manifest.
-64 silly tarball no local data for @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@https://registry.npmjs.org/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/-/plugin-bugfix-v8-spread-parameters-in-optional-chaining-7.25.9.tgz. Extracting by manifest.
-65 silly tarball no local data for @babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@https://registry.npmjs.org/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/-/plugin-bugfix-safari-id-destructuring-collision-in-function-expression-7.25.9.tgz. Extracting by manifest.
-66 silly tarball no local data for @babel/plugin-bugfix-safari-class-field-initializer-scope@https://registry.npmjs.org/@babel/plugin-bugfix-safari-class-field-initializer-scope/-/plugin-bugfix-safari-class-field-initializer-scope-7.25.9.tgz. Extracting by manifest.
-67 silly tarball no local data for @babel/plugin-bugfix-firefox-class-in-computed-class-key@https://registry.npmjs.org/@babel/plugin-bugfix-firefox-class-in-computed-class-key/-/plugin-bugfix-firefox-class-in-computed-class-key-7.25.9.tgz. Extracting by manifest.
-68 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 243ms
-69 silly audit report {
-69 silly audit report   '@babel/helpers': [
-69 silly audit report     {
-69 silly audit report       id: 1103026,
-69 silly audit report       url: 'https://github.com/advisories/GHSA-968p-4wvh-cqc8',
-69 silly audit report       title: 'Babel has inefficient RexExp complexity in generated code with .replace when transpiling named capturing groups',
-69 silly audit report       severity: 'moderate',
-69 silly audit report       vulnerable_versions: '<7.26.10',
-69 silly audit report       cwe: [Array],
-69 silly audit report       cvss: [Object]
-69 silly audit report     }
-69 silly audit report   ],
-69 silly audit report   '@babel/runtime': [
-69 silly audit report     {
-69 silly audit report       id: 1103025,
-69 silly audit report       url: 'https://github.com/advisories/GHSA-968p-4wvh-cqc8',
-69 silly audit report       title: 'Babel has inefficient RexExp complexity in generated code with .replace when transpiling named capturing groups',
-69 silly audit report       severity: 'moderate',
-69 silly audit report       vulnerable_versions: '<7.26.10',
-69 silly audit report       cwe: [Array],
-69 silly audit report       cvss: [Object]
-69 silly audit report     }
-69 silly audit report   ],
-69 silly audit report   cookie: [
-69 silly audit report     {
-69 silly audit report       id: 1103907,
-69 silly audit report       url: 'https://github.com/advisories/GHSA-pxg6-pf52-xh8x',
-69 silly audit report       title: 'cookie accepts cookie name, path, and domain with out of bounds characters',
-69 silly audit report       severity: 'low',
-69 silly audit report       vulnerable_versions: '<0.7.0',
-69 silly audit report       cwe: [Array],
-69 silly audit report       cvss: [Object]
-69 silly audit report     }
-69 silly audit report   ],
-69 silly audit report   'image-size': [
-69 silly audit report     {
-69 silly audit report       id: 1103816,
-69 silly audit report       url: 'https://github.com/advisories/GHSA-m5qc-5hw7-8vg7',
-69 silly audit report       title: 'image-size Denial of Service via Infinite Loop during Image Processing',
-69 silly audit report       severity: 'high',
-69 silly audit report       vulnerable_versions: '>=1.1.0 <1.2.1',
-69 silly audit report       cwe: [Array],
-69 silly audit report       cvss: [Object]
-69 silly audit report     }
-69 silly audit report   ]
-69 silly audit report }
-70 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fhelpers cache-miss
-71 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fruntime cache-miss
-72 silly packumentCache corgi:https://registry.npmjs.org/cookie cache-miss
-73 silly packumentCache corgi:https://registry.npmjs.org/image-size cache-miss
-74 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.25.9.tgz 723ms (cache miss)
-75 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-property-literals/-/plugin-transform-property-literals-7.25.9.tgz 725ms (cache miss)
-76 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-unicode-sets-regex/-/plugin-transform-unicode-sets-regex-7.25.9.tgz 734ms (cache miss)
-77 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-reserved-words/-/plugin-transform-reserved-words-7.25.9.tgz 730ms (cache miss)
-78 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-exponentiation-operator/-/plugin-transform-exponentiation-operator-7.26.3.tgz 721ms (cache miss)
-79 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-unicode-property-regex/-/plugin-transform-unicode-property-regex-7.25.9.tgz 739ms (cache miss)
-80 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-unicode-escapes/-/plugin-transform-unicode-escapes-7.25.9.tgz 741ms (cache miss)
-81 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-new-target/-/plugin-transform-new-target-7.25.9.tgz 735ms (cache miss)
-82 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-typeof-symbol/-/plugin-transform-typeof-symbol-7.26.7.tgz 742ms (cache miss)
-83 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-json-strings/-/plugin-transform-json-strings-7.25.9.tgz 733ms (cache miss)
-84 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-member-expression-literals/-/plugin-transform-member-expression-literals-7.25.9.tgz 734ms (cache miss)
-85 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-duplicate-named-capturing-groups-regex/-/plugin-transform-duplicate-named-capturing-groups-regex-7.25.9.tgz 729ms (cache miss)
-86 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-dynamic-import/-/plugin-transform-dynamic-import-7.25.9.tgz 732ms (cache miss)
-87 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-syntax-unicode-sets-regex/-/plugin-syntax-unicode-sets-regex-7.18.6.tgz 722ms (cache miss)
-88 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-modules-systemjs/-/plugin-transform-modules-systemjs-7.25.9.tgz 740ms (cache miss)
-89 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-dotall-regex/-/plugin-transform-dotall-regex-7.25.9.tgz 731ms (cache miss)
-90 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-duplicate-keys/-/plugin-transform-duplicate-keys-7.25.9.tgz 735ms (cache miss)
-91 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-block-scoped-functions/-/plugin-transform-block-scoped-functions-7.26.5.tgz 733ms (cache miss)
-92 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-syntax-import-assertions/-/plugin-syntax-import-assertions-7.26.0.tgz 731ms (cache miss)
-93 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/-/plugin-bugfix-safari-id-destructuring-collision-in-function-expression-7.25.9.tgz 722ms (cache miss)
-94 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-regexp-modifiers/-/plugin-transform-regexp-modifiers-7.26.0.tgz 758ms (cache miss)
-95 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-modules-amd/-/plugin-transform-modules-amd-7.25.9.tgz 754ms (cache miss)
-96 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-class-static-block/-/plugin-transform-class-static-block-7.26.0.tgz 741ms (cache miss)
-97 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/-/plugin-bugfix-v8-spread-parameters-in-optional-chaining-7.25.9.tgz 733ms (cache miss)
-98 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-bugfix-safari-class-field-initializer-scope/-/plugin-bugfix-safari-class-field-initializer-scope-7.25.9.tgz 730ms (cache miss)
-99 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-bugfix-firefox-class-in-computed-class-key/-/plugin-bugfix-firefox-class-in-computed-class-key-7.25.9.tgz 732ms (cache miss)
-100 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-modules-umd/-/plugin-transform-modules-umd-7.25.9.tgz 765ms (cache miss)
-101 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-proposal-private-property-in-object/-/plugin-proposal-private-property-in-object-7.21.0-placeholder-for-preset-env.2.tgz 746ms (cache miss)
-102 http fetch GET 200 https://registry.npmjs.org/cookie 582ms (cache miss)
-103 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:undefined disposed:false
-104 http fetch GET 200 https://registry.npmjs.org/image-size 594ms (cache miss)
-105 silly packumentCache corgi:https://registry.npmjs.org/image-size set size:undefined disposed:false
-106 http fetch GET 200 https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz 813ms (cache miss)
-107 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/-/plugin-bugfix-v8-static-class-fields-redefine-readonly-7.25.9.tgz 784ms (cache miss)
-108 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 640ms (cache miss)
-109 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fruntime set size:undefined disposed:false
-110 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelpers 688ms (cache miss)
-111 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fhelpers set size:undefined disposed:false
-112 http fetch GET 200 https://registry.npmjs.org/babel-plugin-polyfill-corejs3/-/babel-plugin-polyfill-corejs3-0.11.1.tgz 899ms (cache miss)
-113 http fetch GET 200 https://registry.npmjs.org/@babel/preset-modules/-/preset-modules-0.1.6-no-external-plugins.tgz 909ms (cache miss)
-114 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fcore cache-miss
-115 http fetch GET 200 https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.26.8.tgz 913ms (cache miss)
-116 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 598ms (cache miss)
-117 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fcore set size:undefined disposed:false
-118 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fcli cache-miss
-119 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-compose-refs cache-miss
-120 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-slot cache-miss
-121 silly packumentCache corgi:https://registry.npmjs.org/expo cache-miss
-122 silly packumentCache corgi:https://registry.npmjs.org/metro-runtime cache-miss
-123 silly packumentCache corgi:https://registry.npmjs.org/react-helmet-async cache-miss
-124 silly packumentCache corgi:https://registry.npmjs.org/react-native-web cache-miss
-125 silly packumentCache corgi:https://registry.npmjs.org/regenerator-transform cache-miss
-126 http fetch GET 200 https://registry.npmjs.org/regenerator-transform 123ms (cache miss)
-127 silly packumentCache corgi:https://registry.npmjs.org/regenerator-transform set size:undefined disposed:false
-128 http fetch GET 200 https://registry.npmjs.org/react-helmet-async 152ms (cache miss)
-129 silly packumentCache corgi:https://registry.npmjs.org/react-helmet-async set size:undefined disposed:false
-130 http fetch GET 200 https://registry.npmjs.org/metro-runtime 175ms (cache miss)
-131 silly packumentCache corgi:https://registry.npmjs.org/metro-runtime set size:undefined disposed:false
-132 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-compose-refs 188ms (cache miss)
-133 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-compose-refs set size:undefined disposed:false
-134 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-slot 196ms (cache miss)
-135 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-slot set size:undefined disposed:false
-136 http fetch GET 200 https://registry.npmjs.org/react-native-web 229ms (cache miss)
-137 silly packumentCache corgi:https://registry.npmjs.org/react-native-web set size:undefined disposed:false
-138 http fetch GET 200 https://registry.npmjs.org/@expo%2fcli 267ms (cache miss)
-139 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fcli set size:undefined disposed:false
-140 http fetch GET 200 https://registry.npmjs.org/expo 339ms (cache miss)
-141 silly packumentCache corgi:https://registry.npmjs.org/expo set size:undefined disposed:false
-142 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fserver-runtime cache-miss
-143 http fetch GET 200 https://registry.npmjs.org/@remix-run%2fserver-runtime 173ms (cache miss)
-144 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fserver-runtime set size:undefined disposed:false
-145 silly packumentCache corgi:https://registry.npmjs.org/metro cache-miss
-146 http fetch GET 200 https://registry.npmjs.org/metro 43ms (cache miss)
-147 silly packumentCache corgi:https://registry.npmjs.org/metro set size:undefined disposed:false
-148 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fnode cache-miss
-149 http fetch GET 200 https://registry.npmjs.org/@remix-run%2fnode 103ms (cache miss)
-150 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fnode set size:undefined disposed:false
-151 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fserver cache-miss
-152 http fetch GET 200 https://registry.npmjs.org/@expo%2fserver 121ms (cache miss)
-153 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fserver set size:undefined disposed:false
-154 silly ADD
-155 silly ADD
-156 silly ADD
-157 silly ADD
-158 silly ADD
-159 silly ADD
-160 silly ADD
-161 silly ADD
-162 silly ADD
-163 silly ADD node_modules/esutils
-164 silly ADD node_modules/@babel/preset-modules
-165 silly ADD node_modules/@babel/preset-env
-166 silly ADD node_modules/@babel/preset-env/node_modules/babel-plugin-polyfill-corejs3
-167 silly ADD node_modules/@babel/plugin-transform-unicode-sets-regex
-168 silly ADD node_modules/@babel/plugin-transform-unicode-property-regex
-169 silly ADD node_modules/@babel/plugin-transform-unicode-escapes
-170 silly ADD node_modules/@babel/plugin-transform-typeof-symbol
-171 silly ADD node_modules/@babel/plugin-transform-reserved-words
-172 silly ADD node_modules/@babel/plugin-transform-regexp-modifiers
-173 silly ADD node_modules/@babel/plugin-transform-property-literals
-174 silly ADD node_modules/@babel/plugin-transform-object-super
-175 silly ADD node_modules/@babel/plugin-transform-new-target
-176 silly ADD node_modules/@babel/plugin-transform-modules-umd
-177 silly ADD node_modules/@babel/plugin-transform-modules-systemjs
-178 silly ADD node_modules/@babel/plugin-transform-modules-amd
-179 silly ADD node_modules/@babel/plugin-transform-member-expression-literals
-180 silly ADD node_modules/@babel/plugin-transform-json-strings
-181 silly ADD node_modules/@babel/plugin-transform-exponentiation-operator
-182 silly ADD node_modules/@babel/plugin-transform-dynamic-import
-183 silly ADD node_modules/@babel/plugin-transform-duplicate-named-capturing-groups-regex
-184 silly ADD node_modules/@babel/plugin-transform-duplicate-keys
-185 silly ADD node_modules/@babel/plugin-transform-dotall-regex
-186 silly ADD node_modules/@babel/plugin-transform-class-static-block
-187 silly ADD node_modules/@babel/plugin-transform-block-scoped-functions
-188 silly ADD node_modules/@babel/plugin-syntax-unicode-sets-regex
-189 silly ADD node_modules/@babel/plugin-syntax-import-assertions
-190 silly ADD node_modules/@babel/plugin-proposal-private-property-in-object
-191 silly ADD node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly
-192 silly ADD node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining
-193 silly ADD node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression
-194 silly ADD node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope
-195 silly ADD node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key
-196 verbose cwd /home/user
-197 verbose os Linux 6.1.102
-198 verbose node v20.19.0
-199 verbose npm  v10.8.2
-200 notice
-200 notice New major version of npm available! 10.8.2 -> 11.3.0
-200 notice Changelog: https://github.com/npm/cli/releases/tag/v11.3.0
-200 notice To update run: npm install -g npm@11.3.0
-200 notice  { force: true, [Symbol(proc-log.meta)]: true }
-201 verbose exit 0
-202 info ok
+35 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 739ms
+36 silly audit report {
+36 silly audit report   '@babel/helpers': [
+36 silly audit report     {
+36 silly audit report       id: 1103026,
+36 silly audit report       url: 'https://github.com/advisories/GHSA-968p-4wvh-cqc8',
+36 silly audit report       title: 'Babel has inefficient RexExp complexity in generated code with .replace when transpiling named capturing groups',
+36 silly audit report       severity: 'moderate',
+36 silly audit report       vulnerable_versions: '<7.26.10',
+36 silly audit report       cwe: [Array],
+36 silly audit report       cvss: [Object]
+36 silly audit report     }
+36 silly audit report   ],
+36 silly audit report   '@babel/runtime': [
+36 silly audit report     {
+36 silly audit report       id: 1103025,
+36 silly audit report       url: 'https://github.com/advisories/GHSA-968p-4wvh-cqc8',
+36 silly audit report       title: 'Babel has inefficient RexExp complexity in generated code with .replace when transpiling named capturing groups',
+36 silly audit report       severity: 'moderate',
+36 silly audit report       vulnerable_versions: '<7.26.10',
+36 silly audit report       cwe: [Array],
+36 silly audit report       cvss: [Object]
+36 silly audit report     }
+36 silly audit report   ],
+36 silly audit report   cookie: [
+36 silly audit report     {
+36 silly audit report       id: 1103907,
+36 silly audit report       url: 'https://github.com/advisories/GHSA-pxg6-pf52-xh8x',
+36 silly audit report       title: 'cookie accepts cookie name, path, and domain with out of bounds characters',
+36 silly audit report       severity: 'low',
+36 silly audit report       vulnerable_versions: '<0.7.0',
+36 silly audit report       cwe: [Array],
+36 silly audit report       cvss: [Object]
+36 silly audit report     }
+36 silly audit report   ],
+36 silly audit report   'image-size': [
+36 silly audit report     {
+36 silly audit report       id: 1103816,
+36 silly audit report       url: 'https://github.com/advisories/GHSA-m5qc-5hw7-8vg7',
+36 silly audit report       title: 'image-size Denial of Service via Infinite Loop during Image Processing',
+36 silly audit report       severity: 'high',
+36 silly audit report       vulnerable_versions: '>=1.1.0 <1.2.1',
+36 silly audit report       cwe: [Array],
+36 silly audit report       cvss: [Object]
+36 silly audit report     }
+36 silly audit report   ]
+36 silly audit report }
+37 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fhelpers cache-miss
+38 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fruntime cache-miss
+39 silly packumentCache corgi:https://registry.npmjs.org/cookie cache-miss
+40 silly packumentCache corgi:https://registry.npmjs.org/image-size cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/@babel%2fhelpers 26ms (cache hit)
+42 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fhelpers set size:193928 disposed:false
+43 http fetch GET 200 https://registry.npmjs.org/cookie 30ms (cache hit)
+44 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:22175 disposed:false
+45 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 32ms (cache hit)
+46 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fruntime set size:212688 disposed:false
+47 http fetch GET 200 https://registry.npmjs.org/image-size 34ms (cache hit)
+48 silly packumentCache corgi:https://registry.npmjs.org/image-size set size:76086 disposed:false
+49 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fcore cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 8ms (cache hit)
+51 silly packumentCache corgi:https://registry.npmjs.org/@babel%2fcore set size:380566 disposed:false
+52 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fcli cache-miss
+53 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-compose-refs cache-miss
+54 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-slot cache-miss
+55 silly packumentCache corgi:https://registry.npmjs.org/expo cache-miss
+56 silly packumentCache corgi:https://registry.npmjs.org/metro-runtime cache-miss
+57 silly packumentCache corgi:https://registry.npmjs.org/react-helmet-async cache-miss
+58 silly packumentCache corgi:https://registry.npmjs.org/react-native-web cache-miss
+59 silly packumentCache corgi:https://registry.npmjs.org/regenerator-transform cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-compose-refs 37ms (cache hit)
+61 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-compose-refs set size:116746 disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-slot 43ms (cache hit)
+63 silly packumentCache corgi:https://registry.npmjs.org/@radix-ui%2freact-slot set size:167061 disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/metro-runtime 45ms (cache hit)
+65 silly packumentCache corgi:https://registry.npmjs.org/metro-runtime set size:96123 disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/react-helmet-async 45ms (cache hit)
+67 silly packumentCache corgi:https://registry.npmjs.org/react-helmet-async set size:112107 disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/react-native-web 50ms (cache hit)
+69 silly packumentCache corgi:https://registry.npmjs.org/react-native-web set size:591638 disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/regenerator-transform 60ms (cache hit)
+71 silly packumentCache corgi:https://registry.npmjs.org/regenerator-transform set size:38635 disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/@expo%2fcli 74ms (cache hit)
+73 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fcli set size:980899 disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/expo 88ms (cache hit)
+75 silly packumentCache corgi:https://registry.npmjs.org/expo set size:1337300 disposed:false
+76 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fserver-runtime cache-miss
+77 http fetch GET 200 https://registry.npmjs.org/@remix-run%2fserver-runtime 31ms (cache hit)
+78 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fserver-runtime set size:1600197 disposed:false
+79 silly packumentCache corgi:https://registry.npmjs.org/metro cache-miss
+80 http fetch GET 200 https://registry.npmjs.org/metro 17ms (cache hit)
+81 silly packumentCache corgi:https://registry.npmjs.org/metro set size:496657 disposed:false
+82 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fnode cache-miss
+83 http fetch GET 200 https://registry.npmjs.org/@remix-run%2fnode 10ms (cache hit)
+84 silly packumentCache corgi:https://registry.npmjs.org/@remix-run%2fnode set size:1659777 disposed:false
+85 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fserver cache-miss
+86 http fetch GET 200 https://registry.npmjs.org/@expo%2fserver 4ms (cache hit)
+87 silly packumentCache corgi:https://registry.npmjs.org/@expo%2fserver set size:64609 disposed:false
+88 silly ADD
+89 silly ADD
+90 silly ADD
+91 silly ADD
+92 silly ADD
+93 silly ADD
+94 silly ADD
+95 silly ADD
+96 silly ADD
+97 verbose cwd /home/user
+98 verbose os Linux 6.1.102
+99 verbose node v20.19.0
+100 verbose npm  v10.8.2
+101 verbose exit 0
+102 info ok
