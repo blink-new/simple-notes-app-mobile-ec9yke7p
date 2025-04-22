@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, TextInput, StyleSheet, Pressable, Alert, ActivityIndicator, KeyboardAvoidingView, Platform } from 'react-native';
 import { Stack, useLocalSearchParams, router } from 'expo-router';
-import { ArrowLeft, Trash2 } from 'lucide-react-native';
+import { ArrowLeft, Trash2, Check } from 'lucide-react-native';
 import { useNotes } from '@/hooks/useNotes';
 
 export default function NoteDetailScreen() {
@@ -14,6 +14,7 @@ export default function NoteDetailScreen() {
   const [content, setContent] = useState('');
   const [isSaving, setIsSaving] = useState(false);
   const [isLoading, setIsLoading] = useState(!isNewNote);
+  const [hasChanges, setHasChanges] = useState(false);
 
   useEffect(() => {
     if (!isNewNote) {
@@ -27,12 +28,17 @@ export default function NoteDetailScreen() {
   }, [id, isNewNote, getNote]);
 
   const handleSave = async () => {
+    if (!title.trim() && !content.trim()) {
+      Alert.alert('Cannot Save', 'Note cannot be empty');
+      return;
+    }
+
     setIsSaving(true);
     try {
       if (isNewNote) {
-        await addNote(title, content);
+        await addNote(title.trim(), content.trim());
       } else {
-        await updateNote(id, title, content);
+        await updateNote(id, title.trim(), content.trim());
       }
       router.back();
     } catch (error) {
@@ -66,6 +72,33 @@ export default function NoteDetailScreen() {
     );
   };
 
+  const handleBack = () => {
+    if (hasChanges) {
+      Alert.alert(
+        'Unsaved Changes',
+        'Do you want to save your changes?',
+        [
+          {
+            text: 'Discard',
+            style: 'destructive',
+            onPress: () => router.back(),
+          },
+          {
+            text: 'Save',
+            style: 'default',
+            onPress: handleSave,
+          },
+          {
+            text: 'Cancel',
+            style: 'cancel',
+          },
+        ]
+      );
+    } else {
+      router.back();
+    }
+  };
+
   if (isLoading) {
     return (
       <View style={styles.loadingContainer}>
@@ -80,16 +113,21 @@ export default function NoteDetailScreen() {
         options={{
           headerTitle: isNewNote ? 'New Note' : 'Edit Note',
           headerLeft: () => (
-            <Pressable onPress={handleSave} style={styles.headerButton}>
+            <Pressable onPress={handleBack} style={styles.headerButton}>
               <ArrowLeft size={24} color="#FF9500" />
             </Pressable>
           ),
           headerRight: () => (
-            !isNewNote && (
-              <Pressable onPress={handleDelete} style={styles.headerButton}>
-                <Trash2 size={24} color="#FF3B30" />
+            <View style={styles.headerButtons}>
+              <Pressable onPress={handleSave} style={styles.headerButton}>
+                <Check size={24} color="#FF9500" />
               </Pressable>
-            )
+              {!isNewNote && (
+                <Pressable onPress={handleDelete} style={[styles.headerButton, styles.deleteButton]}>
+                  <Trash2 size={24} color="#FF3B30" />
+                </Pressable>
+              )}
+            </View>
           ),
         }}
       />
@@ -109,7 +147,10 @@ export default function NoteDetailScreen() {
           style={styles.titleInput}
           placeholder="Title"
           value={title}
-          onChangeText={setTitle}
+          onChangeText={(text) => {
+            setTitle(text);
+            setHasChanges(true);
+          }}
           placeholderTextColor="#8E8E93"
           autoFocus={isNewNote}
           selectTextOnFocus={isNewNote}
@@ -119,7 +160,10 @@ export default function NoteDetailScreen() {
           style={styles.contentInput}
           placeholder="Note"
           value={content}
-          onChangeText={setContent}
+          onChangeText={(text) => {
+            setContent(text);
+            setHasChanges(true);
+          }}
           placeholderTextColor="#8E8E93"
           multiline
           textAlignVertical="top"
@@ -140,8 +184,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
   },
+  headerButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   headerButton: {
     padding: 8,
+    marginHorizontal: 4,
+  },
+  deleteButton: {
+    marginLeft: 8,
   },
   titleInput: {
     fontSize: 22,
